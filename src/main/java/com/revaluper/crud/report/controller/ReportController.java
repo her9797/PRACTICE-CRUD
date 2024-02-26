@@ -67,8 +67,12 @@ public class ReportController {
     }
 
     @GetMapping("/delete")
+    public void delete(){}
+
+    @PostMapping("/delete")
     public String delete(ReportDTO reportDTO) {
-//        reportDTO.setRepNo(3);
+
+        reportDTO.setRepNo(reportDTO.getRepNo());
         reportService.delete(reportDTO);
 
         return "main";

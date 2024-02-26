@@ -31,7 +31,6 @@ public class ReportService {
     }
 
     public void delete(ReportDTO reportDTO) {
-        System.out.println("????????????");
         reportMapper.delete(reportDTO);
     }
 }
