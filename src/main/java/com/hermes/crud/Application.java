@@ -1,4 +1,4 @@
-package com.revaluper.crud;
+package com.hermes.crud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

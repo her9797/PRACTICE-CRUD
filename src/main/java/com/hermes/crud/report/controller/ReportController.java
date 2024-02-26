@@ -1,21 +1,13 @@
-package com.revaluper.crud.report.controller;
+package com.hermes.crud.report.controller;
 
-import com.revaluper.crud.report.model.dto.ReportDTO;
-import com.revaluper.crud.report.model.service.ReportService;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.hermes.crud.report.model.dto.ReportDTO;
+import com.hermes.crud.report.model.service.ReportService;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.yaml.snakeyaml.representer.Represent;
 
-import java.security.SecureRandom;
 import java.util.List;
-import java.util.Locale;
-import java.util.Map;
 
 @Controller
 @RequestMapping("/report")

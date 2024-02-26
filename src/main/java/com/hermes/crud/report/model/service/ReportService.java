@@ -1,10 +1,9 @@
-package com.revaluper.crud.report.model.service;
+package com.hermes.crud.report.model.service;
 
-import com.revaluper.crud.report.model.dao.ReportMapper;
-import com.revaluper.crud.report.model.dto.ReportDTO;
+import com.hermes.crud.report.model.dao.ReportMapper;
+import com.hermes.crud.report.model.dto.ReportDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

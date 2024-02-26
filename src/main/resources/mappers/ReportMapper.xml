@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.revaluper.crud.report.model.dao.ReportMapper">
+<mapper namespace="com.hermes.crud.report.model.dao.ReportMapper">
 
-    <resultMap id="reportResultMap" type="com.revaluper.crud.report.model.dto.ReportDTO">
+    <resultMap id="reportResultMap" type="com.hermes.crud.report.model.dto.ReportDTO">
         <id property="repNo" column="REP_NO" />
         <result property="repTitle" column="REP_TITLE" />
         <result property="repContent" column="REP_CONTENT" />
@@ -23,7 +23,7 @@
           FROM REPORT
     </select>
 
-    <insert id="insert" parameterType="com.revaluper.crud.report.model.dto.ReportDTO">
+    <insert id="insert" parameterType="com.hermes.crud.report.model.dto.ReportDTO">
         INSERT INTO REPORT(
                                 REP_TITLE
                                 ,REP_CONTENT
@@ -42,14 +42,14 @@
     </insert>
 
 
-    <update id="modifyReport" parameterType="com.revaluper.crud.report.model.dto.ReportDTO">
+    <update id="modifyReport" parameterType="com.hermes.crud.report.model.dto.ReportDTO">
         UPDATE  REPORT
            SET  rep_no = #{ repNo }
                 ,REP_CONTENT = #{ repContent }
          WHERE  REP_NO = #{ repNo }
     </update>
 
-    <delete id="delete" parameterType="com.revaluper.crud.report.model.dto.ReportDTO">
+    <delete id="delete" parameterType="com.hermes.crud.report.model.dto.ReportDTO">
         DELETE
           FROM REPORT
          WHERE REP_NO = #{ repNo }

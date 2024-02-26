@@ -1,4 +1,4 @@
-package com.revaluper.crud.report.model.dto;
+package com.hermes.crud.report.model.dto;
 
 public class ReportDTO implements java.io.Serializable {
 

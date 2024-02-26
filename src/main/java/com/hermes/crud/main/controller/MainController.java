@@ -1,4 +1,4 @@
-package com.revaluper.crud.main.controller;
+package com.hermes.crud.main.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
-package com.revaluper.crud.report.model.dao;
+package com.hermes.crud.report.model.dao;
 
-import com.revaluper.crud.report.model.dto.ReportDTO;
+import com.hermes.crud.report.model.dto.ReportDTO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
